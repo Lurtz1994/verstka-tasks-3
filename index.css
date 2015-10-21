@@ -1,0 +1,51 @@
+table {
+    background-color: #AAFDFD;
+    font-family:sans-serif;
+    font-size: 90%;
+    text-align: center;
+}
+
+.flight {
+    font-weight: bold;
+}
+
+.headerOfTable {
+    background-color: #00A8A8;
+}
+
+.evenRow {
+     background-color: rgba(136,253,253,0.8);
+
+ }
+
+ tr:hover {
+     background-color: rgba(0,255,255,1);
+     background-blend-mode: overlay;
+
+}
+form {
+    background: #DDFDFD;
+}
+.email:valid {
+    background:#AAFFAA ;
+}
+
+.email:invalid {
+    background:#FFAAAA ;
+}
+
+.tel:valid {
+    background:#AAFFAA ;
+}
+.tel:invalid {
+    background:#FFAAAA ;
+}
+
+.tel:valid .email:valid .buttonClass {
+    display: block;
+}
+
+
+
+
+
