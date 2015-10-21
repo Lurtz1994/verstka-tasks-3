@@ -7,12 +7,204 @@
     </head>
     <body>
         <!-- Поле для фильтрации по городу -->
-        <input
-            type="text"
-            placeholder="Город отправления"
-            value=""
-            onkeyup="this.setAttribute('value', this.value)">
+        <main>
+            <input
+                type="text"
+                placeholder="Город отправления"
+                value=""
+                onkeyup="this.setAttribute('value', this.value)">
+            <table>
+                <caption>Таблица прилетов и вылетов</caption>
+                <colgroup>
+                    <col class="col1">
+                    <col class="col2">
+                    <col class="col3">
+                    <col class="col4">
+                    <col class="col5">
+                    <col class="col6">
+                    <col class="col7">
+                    <col class="col8">
+                </colgroup>
+                <tr class="headerOfTable">
+                    <th></th>
+                    <th>Рейс</th>
+                    <th>Направление</th>
+                    <th>Тип ВС</th>
+                    <th>Плановое время</th>
+                    <th>Ожидаемое/фактическое<br> время</th>
+                    <th>Статус</th>
+                    <th>Примечание</th>
+                </tr>
+                <tr>
+                    <td><img src="http://www.koltsovo.ru/attels/logo4site/390.gif"></td>
+                    <td class="flight" class="evenCol">S7-55</td>
+                    <td>Москва/ДМД</td>
+                    <td class="evenCol">А-319</td>
+                    <td>21 Окт 19.10</td>
+                    <td class="evenCol">19.01</td>
+                    <td>Прибыл</td>
+                    <td class="evenCol"></td>
+                </tr>
+                <tr class="evenRow">
+                    <td><img src="http://www.koltsovo.ru/attels/logo4site/371.gif"></td>
+                    <td class="flight" class="evenCol">PS-9055</td>
+                    <td>Москва/ДМД</td>
+                    <td class="evenCol">А-319</td>
+                    <td>21 Окт 19.10</td>
+                    <td class="evenCol">19.01</td>
+                    <td>Прибыл</td>
+                    <td class="evenCol">Совмещен с S7-55</td>
+                </tr>
+                <tr>
+                    <td><img src="http://www.koltsovo.ru/attels/logo4site/317.gif"></td>
+                    <td class="flight" class="evenCol">YC-102</td>
+                    <td>Ростов-на-Дону</td>
+                    <td class="evenCol">CRJ-200</td>
+                    <td>20 Окт 19.10</td>
+                    <td class="evenCol">19.25</td>
+                    <td>Вылетел</td>
+                    <td class="evenCol"></td>
+                </tr>
+                <tr class="evenRow">
+                    <td><img src="http://www.koltsovo.ru/attels/logo4site/2991.gif"></td>
+                    <td class="flight" class="evenCol">A3-3516</td>
+                    <td>Москва/ДМД</td>
+                    <td class="evenCol">А-319</td>
+                    <td>21 Окт 19.10</td>
+                    <td class="evenCol">19.01</td>
+                    <td>Прибыл</td>
+                    <td class="evenCol">Совмещен с S7-55</td>
+                </tr>
+                <tr>
+                    <td><img src="http://www.koltsovo.ru/attels/logo4site/123.gif"></td>
+                    <td class="flight" class="evenCol">LY-8943</td>
+                    <td>Москва/ДМД</td>
+                    <td class="evenCol">А-319</td>
+                    <td>21 Окт 19.10</td>
+                    <td class="evenCol">19.01</td>
+                    <td>Прибыл</td>
+                    <td class="evenCol">Совмещен с S7-55</td>
+                </tr>
+                <tr class="evenRow">
+                    <td><img src="http://www.koltsovo.ru/attels/logo4site/3154.gif"></td>
+                    <td class="flight" class="evenCol">EY-4344</td>
+                    <td>Москва/ДМД</td>
+                    <td class="evenCol">А-319</td>
+                    <td>21 Окт 19.10</td>
+                    <td class="evenCol">19.01</td>
+                    <td>Прибыл</td>
+                    <td class="evenCol">Совмещен с S7-55</td>
+                </tr>
+                <tr>
+                    <td><img src="http://www.koltsovo.ru/attels/logo4site/382.gif"></td>
+                    <td class="flight" class="evenCol">7R-806</td>
+                    <td>Новый Уренгой</td>
+                    <td class="evenCol">CRJ-200</td>
+                    <td>21 Окт 19.50</td>
+                    <td class="evenCol">19.20</td>
+                    <td>Прибыл</td>
+                    <td class="evenCol"></td>
+                </tr>
+                <tr class="evenRow">
+                    <td><img src="http://www.koltsovo.ru/attels/logo4site/317.gif"></td>
+                    <td class="flight" class="evenCol">YC-102</td>
+                    <td>Тюмень</td>
+                    <td class="evenCol">CRJ-200</td>
+                    <td>21 Окт 19.25</td>
+                    <td class="evenCol">19.25</td>
+                    <td>Вылетел</td>
+                    <td class="evenCol"></td>
+                </tr>
+                <tr>
+                    <td><img src="http://www.koltsovo.ru/attels/logo4site/515.gif"></td>
+                    <td class="flight" class="evenCol">UT-112</td>
+                    <td>Сургут</td>
+                    <td class="evenCol">АT-72-5</td>
+                    <td>21 Окт 20.25</td>
+                    <td class="evenCol">20.30</td>
+                    <td>Вылетел</td>
+                    <td class="evenCol"></td>
+                </tr>
+                <tr class="evenRow">
+                    <td><img src="http://www.koltsovo.ru/attels/logo4site/416.gif"></td>
+                    <td class="flight" class="evenCol">EY-4344</td>
+                    <td>Владивосток</td>
+                    <td class="evenCol">А-320</td>
+                    <td>22 Окт 03.25</td>
+                    <td class="evenCol">03.25</td>
+                    <td>Прибыл</td>
+                    <td class="evenCol"></td>
+                </tr>
+                <tr>
+                    <td><img src="http://www.koltsovo.ru/attels/logo4site/4831.gif"></td>
+                    <td class="flight" class="evenCol">DP-408</td>
+                    <td>Москва/ВНК</td>
+                    <td class="evenCol">B-737-800W</td>
+                    <td>21 Окт 23.40</td>
+                    <td class="evenCol">23.40</td>
+                    <td>Вылетел</td>
+                    <td class="evenCol"></td>
+                </tr>
+                <tr class="evenRow">
+                    <td><img src="http://www.koltsovo.ru/attels/logo4site/3152.gif"></td>
+                    <td class="flight" class="evenCol">IB-7257</td>
+                    <td>Москва/ДМД</td>
+                    <td class="evenCol">A-319</td>
+                    <td>22 Окт 3.55</td>
+                    <td class="evenCol">3.55</td>
+                    <td>Прибыл</td>
+                    <td class="evenCol"></td>
+                </tr>
+                <tr>
+                    <td><img src="http://www.koltsovo.ru/attels/logo4site/2251.gif"></td>
+                    <td class="flight" class="evenCol">AF-4906</td>
+                    <td>Москва/ШРМ</td>
+                    <td class="evenCol">A-321</td>
+                    <td>22 Окт 1.40</td>
+                    <td class="evenCol">1.50</td>
+                    <td>Прибыл</td>
+                    <td class="evenCol">Позднее прибытие</td>
+                </tr>
+                <tr class="evenRow">
+                    <td><img src="http://www.koltsovo.ru/attels/logo4site/2171.gif"></td>
+                    <td class="flight" class="evenCol">O7-86</td>
+                    <td>Оренбург</td>
+                    <td class="evenCol">Л-410</td>
+                    <td>21 Окт 21.00</td>
+                    <td class="evenCol">21.10</td>
+                    <td>Вылетел</td>
+                    <td class="evenCol"></td>
+                </tr>
+                <tr>
+                    <td><img src="http://www.koltsovo.ru/attels/logo4site/397.gif"></td>
+                    <td class="flight" class="evenCol">SU-1409</td>
+                    <td>C.Петербург</td>
+                    <td class="evenCol">A-319</td>
+                    <td>22 Окт 5.40</td>
+                    <td class="evenCol">5.40</td>
+                    <td>Вылетел</td>
+                    <td class="evenCol"></td>
+                </tr>
+                <tr class="evenRow">
+                    <td><img src="http://www.koltsovo.ru/attels/logo4site/4831.gif"></td>
+                    <td class="flight" class="evenCol">DP-409</td>
+                    <td>Новосибирск</td>
+                    <td class="evenCol">B-737-800W</td>
+                    <td>22 Окт 6.20</td>
+                    <td class="evenCol">6.40</td>
+                    <td>Вылетел</td>
+                    <td class="evenCol"></td>
+                </tr>
+            </table>
+            <hr>
+            <form>
+                Введите email и телефон<br>
+                <input type="email" name="email" class="email" placeholder="Введите вашу почту"><br>
+                <input type="tel" name="tel" class="tel" placeholder="Введите ваш телефон"><br>
+                <button type="submit" name="submit" class="buttonClass" display="none">
+                    Отправить данные о рейсе на телефон</button>
+            </form>
+        </main>
 
-        <!-- Здесь применять вашу самую сильную магию -->
     </body>
 </html>
