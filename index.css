@@ -1,51 +1,52 @@
 table {
-    background-color: #AAFDFD;
+    background-color: #aafdfd;
     font-family:sans-serif;
     font-size: 90%;
     text-align: center;
+    overflow: hidden;
+    border-spacing: 0;
+    z-index: 1;
 }
-
+tbody td {
+    position: relative;
+}
+tbody tr:hover {
+    background-color: rgba(0, 255, 255, .5);
+}
+tbody td:hover::after {
+    content: '';
+    height: 10000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0,255,255,.5);
+}
 .flight {
     font-weight: bold;
 }
-
-.headerOfTable {
+thead {
     background-color: #00A8A8;
 }
-
 .evenRow {
      background-color: rgba(136,253,253,0.8);
-
- }
-
- tr:hover {
-     background-color: rgba(0,255,255,1);
-     background-blend-mode: overlay;
-
 }
 form {
-    background: #DDFDFD;
+    background: #ddfdfd;
 }
 .email:valid {
-    background:#AAFFAA ;
+    background: #aaffaa;
 }
-
 .email:invalid {
-    background:#FFAAAA ;
+    background: #ffaaaa; ;
 }
-
 .tel:valid {
-    background:#AAFFAA ;
+    background:#aaffaa ;
 }
 .tel:invalid {
-    background:#FFAAAA ;
+    background: #ffaaaa; ;
 }
-
 .tel:valid .email:valid .buttonClass {
-    display: block;
+    display: inLine;
 }
-
-
-
-
-
