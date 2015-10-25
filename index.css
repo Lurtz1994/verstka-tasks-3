@@ -1,17 +1,15 @@
 table {
-    background-color: #aafdfd;
     font-family:sans-serif;
     font-size: 90%;
     text-align: center;
     overflow: hidden;
     border-spacing: 0;
-    z-index: 1;
 }
 tbody td {
     position: relative;
 }
 tbody tr:hover {
-    background-color: rgba(0, 255, 255, .5);
+    background-color: rgba(0, 255, 255, .8);
 }
 tbody td:hover::after {
     content: '';
@@ -20,8 +18,8 @@ tbody td:hover::after {
     position: absolute;
     top: -5000px;
     width: 100%;
-    z-index: 1;
-    background-color: rgba(0,255,255,.5);
+    z-index: -1;
+    background-color: rgba(0,255,255,.8);
 }
 .flight {
     font-weight: bold;
@@ -50,3 +48,8 @@ form {
 .tel:valid .email:valid .buttonClass {
     display: inLine;
 }
+
+
+
+
+
