@@ -4,6 +4,7 @@ table {
     text-align: center;
     overflow: hidden;
     border-spacing: 0;
+    border-collapse: collapse;
 }
 tbody td {
     position: relative;
@@ -25,31 +26,29 @@ tbody td:hover::after {
     font-weight: bold;
 }
 thead {
-    background-color: #00A8A8;
+    background-color: #00a8a8;
 }
 .evenRow {
-     background-color: rgba(136,253,253,0.8);
+     background-color: rgba(136,253,253,.8);
 }
 form {
     background: #ddfdfd;
+}
+.tel:invalid ~ .buttonClass, .email:invalid ~ .buttonClass  {
+    display: none;
 }
 .email:valid {
     background: #aaffaa;
 }
 .email:invalid {
-    background: #ffaaaa; ;
+    background: #ffaaaa;
 }
 .tel:valid {
     background:#aaffaa ;
 }
 .tel:invalid {
-    background: #ffaaaa; ;
+    background: #ffaaaa;
 }
-.tel:valid .email:valid .buttonClass {
-    display: inLine;
+.tel:valid ~ .email:valid ~ .buttonClass {
+    display: inline;
 }
-
-
-
-
-
